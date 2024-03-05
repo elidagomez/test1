@@ -1,38 +1,6 @@
 print("welcome to the jungle baby")
 
-"""lista = ["Debanhi", "Marianna","Mario","Elida"]
-
-print(lista)
-
-new_element = input("Deseas agregar otro elemento a la lista?")
-
-lista.append(new_element)
-
-print("agregaste "+ new_element)
-
-print(" a continuacion tu lista:")
-
-print(lista)"""
-
-#try to read elements from file
 filename = 'elements.txt'
-
-
-"""with open(filename) as file_object:
-	#contents = file_object.read()
-	lines = file_object.readlines()
-
-print(lines)"""
-
-"""print("ESPACIO")	
-for line in lines:
-	print(line.rstrip())
-
-#agregar nuevo elemento a la lista y archivo de texto
-new_element = input("Agrega un nuevo elemento: ")
-
-with open(filename, 'a') as file_object:
-	file_object.write(new_element+'\n')"""
 
 #crear funcion para consultar elementos del archivo
 def get_elements_from_file(filename):
