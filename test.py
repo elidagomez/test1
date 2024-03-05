@@ -38,3 +38,14 @@ add_new_entry_to_file("anitalabalatina",filename)
 orderlist = list_elements_from_file(filename)
 print(orderlist)
 
+#funcion para eliminar un registro dentro del archivo
+def delete_entry_from_file(name,filename):
+	with open(filename,'w') as file_object:
+		for line in lines:
+			if line.strip("\n") != name:
+				file_object.write(line)
+	print("eliminaste "+ name)
+
+delete_element = delete_entry_from_file("anitalabalatina",filename)
+orderlist = list_elements_from_file(filename)
+print(orderlist)
